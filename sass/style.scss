@@ -18,7 +18,7 @@ body {
     text-align: center;
   }
 
-  &:hover .element { opacity: 0.3; }
+  & :hover .element { opacity: 0.3; }
 
   & .element:hover {
     opacity: 1;
@@ -29,7 +29,35 @@ body {
 /* Global END */ 
 
 
+/* Flexbox */ 
+.inside-container, .flex-column, .flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+/* Flexbox END */
+
+
 /* Images */
+.element {
+  height: 120px;
+  margin: 5px;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+}
+
+.element-big {
+  height: 210px;
+}
+
 .img-1 {background-image: url('../images/DSC_0175.jpg');}
 .img-2 {background-image: url('../images/DSC_0176.jpg');}
 .img-3 {background-image: url('../images/DSC_0192.jpg');}
@@ -42,18 +70,6 @@ body {
 .img-10 {background-image: url('../images/DSC_0283.jpg');}
 .img-11 {background-image: url('../images/DSC_0284.jpg');}
 .img-12 {background-image: url('../images/rozcieranie-poprzeczne-szyja.jpg');}
-
-.element {
-  height: 120px;
-  margin: 5px;
-  border-radius: 5px;
-  background-position: center;
-  background-size: cover;
-}
-
-.element-big {
-  height: 210px;
-}
 /* Images END */
 
 
