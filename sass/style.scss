@@ -1,27 +1,59 @@
 /* Variables */ 
-
 $text-color: #000;
 $text-font-family: 'Open Sans', sans-serif;
 $text-size: 36px;
 
 $main-color: #fff;
-
 /* Variables END */
 
 
 /* Global */ 
-
 body {
   background: $main-color;
 
-  & .page-title {
+  .page-title {
     font-family: $text-font-family;
     font-size: $text-size;
     color: $text-color;
-    text-align: center;    
-
+    text-align: center;
   }
+
+  &:hover .element { opacity: 0.3; }
+
+  & .element:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+}
+/* Global END */ 
+
+
+/* Images */
+.img-1 {background-image: url('../images/DSC_0175.jpg');}
+.img-2 {background-image: url('../images/DSC_0176.jpg');}
+.img-3 {background-image: url('../images/DSC_0192.jpg');}
+.img-4 {background-image: url('../images/DSC_0199.jpg');}
+.img-5 {background-image: url('../images/DSC_0233.jpg');}
+.img-6 {background-image: url('../images/DSC_0244.jpg');}
+.img-7 {background-image: url('../images/DSC_0258.jpg');}
+.img-8 {background-image: url('../images/DSC_0272.jpg');}
+.img-9 {background-image: url('../images/DSC_0279.jpg');}
+.img-10 {background-image: url('../images/DSC_0283.jpg');}
+.img-11 {background-image: url('../images/DSC_0284.jpg');}
+.img-12 {background-image: url('../images/rozcieranie-poprzeczne-szyja.jpg');}
+
+.element {
+  height: 120px;
+  margin: 5px;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
 }
 
-/* Global END */ 
+.element-big {
+  height: 210px;
+}
+/* Images END */
+
 
