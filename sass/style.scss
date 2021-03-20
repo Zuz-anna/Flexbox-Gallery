@@ -9,3 +9,19 @@ $main-color: #fff;
 /* Variables END */
 
 
+/* Global */ 
+
+body {
+  background: $main-color;
+
+  & .page-title {
+    font-family: $text-font-family;
+    font-size: $text-size;
+    color: $text-color;
+    text-align: center;    
+
+  }
+}
+
+/* Global END */ 
+
